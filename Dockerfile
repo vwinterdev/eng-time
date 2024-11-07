@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Запускаем сборку приложения с SSG
-RUN npm run build
+RUN npm run ssg
 
 # Stage 2: Настройка Nginx для статического хостинга
 FROM nginx:alpine
