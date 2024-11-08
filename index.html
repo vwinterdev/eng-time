@@ -9,30 +9,32 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
-    <div id="video-widget" class="video-widget"></div>
+    <div id="video-widget" class="video-widget" draggable="true"></div>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const widgetEl = document.querySelector('#video-widget')
-        widgetEl.innerHTML = `
-            <video id="video-widget-tag" autoplay muted loop>
-              <source  type="video/mp4" src="/video.mp4">
+        setTimeout(() => {
+          const widgetEl = document.querySelector('#video-widget')
+          widgetEl.innerHTML = `
+          <video id="video-widget-tag" autoplay muted loop>
+            <source  type="video/mp4" src="/video.mp4">
             </video>
             `
-        
-        const videoEl = document.querySelector('#video-widget-tag')
-        const videoWidgetEl = document.querySelector('#video-widget')
+          
+          const videoEl = document.querySelector('#video-widget-tag')
+          const videoWidgetEl = document.querySelector('#video-widget')
 
-        videoEl.addEventListener('click', (event) => {
-          event.stopPropagation()
-          videoWidgetEl.classList.add('--open')
-          videoEl.muted = false;
-        })
-
-        document.addEventListener('click', (event) => {
-          videoWidgetEl.classList.remove('--open')
-          videoEl.muted = true;
-        });
+          videoEl.addEventListener('click', (event) => {
+            event.stopPropagation()
+            videoWidgetEl.classList.add('--open')
+            videoEl.muted = false;
+          })
+          
+          document.addEventListener('click', (event) => {
+            videoWidgetEl.classList.remove('--open')
+            videoEl.muted = true;
+          });
+        }, 2000)
       });
     </script>
   </body>
