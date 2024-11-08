@@ -1,11 +1,11 @@
 <template>
   <Hero />
-  <Content />
-  <Price />
-  <Testimonials />
-  <Team />
-  <FAQs />
-  <Form />
+  <Content id="about"/>
+  <Price id="price"/>
+  <Testimonials id="reviews" />
+  <Team id="teachers" />
+  <FAQs  id="faq"/>
+  <Form id="form" />
   <!-- <Footer /> -->
 </template>
 
@@ -19,3 +19,4 @@ import Testimonials from './components/testimonials.vue'
 import Price from './components/price.vue'
 import Form from './components/form.vue'
 </script>
+

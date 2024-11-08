@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white py-24 sm:py-32">
+    <div class="py-24 sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div class="lg:pr-4">
@@ -16,31 +16,28 @@
                 </svg>
                 <img src="https://tailwindui.com/img/logos/workcation-logo-white.svg" alt="" class="h-12 w-auto" />
                 <blockquote class="mt-6 text-xl font-semibold leading-8 text-white">
-                  <p>“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare arcu gravida natoque erat et cursus tortor.”</p>
+                  <p>“Учитесь уверенно общаться на английском и достигайте новых вершин в карьере и жизни. Ваше будущее начинается в Ваших руках.”</p>
                 </blockquote>
-                <figcaption class="mt-6 text-sm leading-6 text-gray-300"><strong class="font-semibold text-white">Judith Rogers,</strong> CEO at Workcation</figcaption>
+                <figcaption class="mt-6 text-sm leading-6 text-gray-300"><strong class="font-semibold text-white">Кристина Богданова,</strong> основатель школы</figcaption>
               </figure>
             </div>
           </div>
           <div>
             <div class="text-base leading-7 text-gray-700 lg:max-w-lg">
-              <p class="text-base font-semibold leading-7 text-indigo-600">Company values</p>
-              <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">On a mission to empower remote teams</h1>
+              <p class="text-base font-semibold leading-7 text-indigo-600">О нас</p>
+              <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">English Time — ваш проводник в мир свободного английского</h1>
               <div class="max-w-xl">
-                <p class="mt-6">Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.</p>
-                <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p>
-                <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p>
+                <p class="mt-6">В English Time мы понимаем, что знание английского языка — это ключ к новым возможностям, будь то путешествия, образование или карьера. Именно поэтому наша школа ставит перед собой цель сделать обучение доступным, комфортным и увлекательным для каждого. Мы создаём среду, где каждый ученик, независимо от уровня подготовки, чувствует себя уверенно и мотивированно на пути к свободному общению.</p>
+                <p class="mt-8">Наши занятия построены так, чтобы дать не только знание грамматики и лексики, но и помочь развить навыки разговорного английского, уверенность в себе и понимание культурных особенностей общения. Мы стремимся к тому, чтобы каждый урок был шагом вперёд, открывая для вас новые возможности и устраняя языковые барьеры.</p>
+                <p class="mt-8">Наш подход — это не просто изучение языка, а возможность для личного роста и профессионального развития.</p>
               </div>
             </div>
-            <dl class="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4">
+            <dl class="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-3">
               <div v-for="(stat, statIdx) in stats" :key="statIdx">
                 <dt class="text-sm font-semibold leading-6 text-gray-600">{{ stat.label }}</dt>
                 <dd class="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">{{ stat.value }}</dd>
               </div>
             </dl>
-            <div class="mt-10 flex">
-              <a href="#" class="text-base font-semibold leading-7 text-indigo-600">Learn more about our company <span aria-hidden="true">&rarr;</span></a>
-            </div>
           </div>
         </div>
       </div>
@@ -49,9 +46,8 @@
   
   <script setup>
   const stats = [
-    { label: 'Founded', value: '2021' },
-    { label: 'Employees', value: '37' },
-    { label: 'Countries', value: '12' },
-    { label: 'Raised', value: '$25M' },
+    { label: 'Основание', value: '2021' },
+    { label: 'Ученики', value: '100+' },
+    { label: 'Средний балл ЕГЭ', value: '87' },
   ]
   </script>
