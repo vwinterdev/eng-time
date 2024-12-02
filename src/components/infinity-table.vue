@@ -1,19 +1,19 @@
 <template>
     <div class="gallery-container">
         <div class="gallery-wrapper">
-            <a :href="`/images/${i}.webp`" v-for="i of 13" :key="i">
+            <a :href="`/images/${i}.webp`" v-for="i of 13" :key="i + 'a'">
                 <div class="gallery-item">
-                    <img loading="lazy" :src="`/images/${i}.webp`" :alt="`Image ${i}`">
+                    <img  :src="`/images/${i}.webp`" :alt="`Image ${i}`">
                 </div>
             </a>
-            <a :href="`/images/${i}.webp`" v-for="i of 13" :key="i">
+            <a :href="`/images/${i}.webp`" v-for="i of 13" :key="i + 'w'">
                 <div class="gallery-item">
-                    <img loading="lazy"  :src="`/images/${i}.webp`" :alt="`Image ${i}`">
+                    <img  :src="`/images/${i}.webp`" :alt="`Image ${i}`">
                 </div>
             </a>
-            <a :href="`/images/${i}.webp`" v-for="i of 13" :key="i">
+            <a :href="`/images/${i}.webp`" v-for="i of 13" :key="i + 'q'">
                 <div class="gallery-item">
-                    <img loading="lazy" :src="`/images/${i}.webp`" :alt="`Image ${i}`">
+                    <img :src="`/images/${i}.webp`" :alt="`Image ${i}`">
                 </div>
             </a>
         </div>
