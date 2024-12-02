@@ -17,8 +17,8 @@ const videoEl = shallowRef(null)
 onMounted(() => {
     document.addEventListener('click', (event) => {
         isOpen.value = false
-        videoEl.muted = true;
-        videoEl.play()
+        videoEl.value.muted = true;
+        videoEl.value.play()
     });
 })
 </script>
