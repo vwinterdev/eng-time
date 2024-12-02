@@ -8,8 +8,8 @@
     </div>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-xl text-center">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Testimonials</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We have worked with thousands of amazing people</p>
+
+        <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Что о нас пишут в интернете?</h2>
       </div>
       <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
         <div v-for="(columnGroup, columnGroupIdx) in testimonials" :key="columnGroupIdx" class="space-y-8 xl:contents xl:space-y-0">
@@ -22,7 +22,7 @@
                 <img class="h-10 w-10 rounded-full bg-gray-50" :src="testimonial.author.imageUrl" alt="" />
                 <div>
                   <div class="font-semibold">{{ testimonial.author.name }}</div>
-                  <div class="text-gray-600">{{ `@${testimonial.author.handle}` }}</div>
+                  <div class="text-gray-600"></div>
                 </div>
               </figcaption>
             </figure>
@@ -39,33 +39,35 @@ const testimonials = [
   [
     [
       {
-        body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+        body: 'Прекрасный, добрый учитель, хорошо объясняет. помогает подготовиться к контрольным. очень рады, что записались❤️',
         author: {
-          name: 'Leslie Alexander',
-          handle: 'lesliealexander',
+          name: 'Василиса Грицкевич',
+          handle: '',
           imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'https://i2.photo.2gis.com/images/profile/30258560133227785_b443_96x96.jpg',
         },
       },
       {
-        body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
+        body: 'Великолепно объясняют темы,находят подход к каждому.Занятия проходят в приятной и комфортной обстановке,хочется туда возвращаться снова и снова,Ирина Владимировна самая приятная женщина на свете)',
         author: {
-          name: 'Leonard Krasner',
+          name: 'Angelina Vladimirovna',
           handle: 'leonardkrasner',
           imageUrl:
-            'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'https://i6.photo.2gis.com/images/profile/30258560128936864_60b2_96x96.jpg',
         },
       },
       // More testimonials...
     ],
     [
       {
-        body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+        body: `Занимаюсь удаленно, так как часто работаю по командировкам и не всегда удобно приезжать в офис. Благодарю Ирину за то что всегда помогает мне готовиться к конференциям, форумам и выступлениям перед зарубежными партерами.
+Также всегда рекомендую Ирину как грамотного специалиста, своим коллегам по работе, работать с которой всегда приятно и эффективно.
+Обучаюсь в индивидуальном формате по доступной цене, есть с чем сравнить.`,
         author: {
-          name: 'Lindsay Walton',
-          handle: 'lindsaywalton',
+          name: 'Александр Ракицкий',
+          handle: '',
           imageUrl:
-            'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'https://i3.photo.2gis.com/images/profile/30258560127508152_1459_96x96.jpg',
         },
       },
       
@@ -75,24 +77,27 @@ const testimonials = [
   [
     [
       {
-        body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
+        body: `Помимо школьной программы, которую учитель помогла нам наверстать, Ирина Владимировна направляла мне и дополнительные задания, которые они проходили вместе после уроков. В результате уроки теперь без слёз и истерик. А когда узнали куда теперь можно приходить заниматься после школы, то выбор уже был однозначным и неизменным.
+Большое человеческое спасибо!`,
         author: {
-          name: 'Tom Cook',
+          name: 'Юлия Венчакова',
           handle: 'tomcook',
           imageUrl:
-            'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'https://i8.photo.2gis.com/images/profile/30258560127503676_5cc9_96x96.jpg',
         },
       },
       // More testimonials...
     ],
     [
       {
-        body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
+        body: `Ребята) Спешу поделиться с вами отзывом о моем обучении с Ириной)) Вы - Лучшая! Ван Лав <3
+Со школы английский не удавалось выучить, галопом по европам, только начнешь разбираться, а уже ушли на две темы вперед(
+Ирина индивидуально посмотрела мой уровень знаний и мы определили программу по которой будем заниматься)) Очень уютный и комфортный кабинет, все так эстетично, много места и света))`,
         author: {
-          name: 'Leonard Krasner',
+          name: 'Марина Неволина',
           handle: 'leonardkrasner',
           imageUrl:
-            'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'https://i5.photo.2gis.com/images/profile/30258560127453511_4317_96x96.jpg',
         },
       },
       // More testimonials...
