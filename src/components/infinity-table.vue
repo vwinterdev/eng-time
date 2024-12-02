@@ -3,17 +3,17 @@
         <div class="gallery-wrapper">
             <a :href="`/images/${i}.webp`" v-for="i of 13" :key="i">
                 <div class="gallery-item">
-                    <img :src="`/images/${i}.webp`" :alt="`Image ${i}`">
+                    <img loading="lazy" :src="`/images/${i}.webp`" :alt="`Image ${i}`">
                 </div>
             </a>
             <a :href="`/images/${i}.webp`" v-for="i of 13" :key="i">
                 <div class="gallery-item">
-                    <img :src="`/images/${i}.webp`" :alt="`Image ${i}`">
+                    <img loading="lazy"  :src="`/images/${i}.webp`" :alt="`Image ${i}`">
                 </div>
             </a>
             <a :href="`/images/${i}.webp`" v-for="i of 13" :key="i">
                 <div class="gallery-item">
-                    <img :src="`/images/${i}.webp`" :alt="`Image ${i}`">
+                    <img loading="lazy" :src="`/images/${i}.webp`" :alt="`Image ${i}`">
                 </div>
             </a>
         </div>

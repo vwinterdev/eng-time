@@ -11,7 +11,7 @@
                 <div class="sm:flex-shrink-0">
                   <a :href="incentive.imageSrc">
                     <div>
-                        <img class="rounded-xl shadow-2xl ring-1 ring-gray-900/10" :src="incentive.imageSrc" alt="" />
+                        <img loading="lazy" class="rounded-xl shadow-2xl ring-1 ring-gray-900/10" :src="incentive.imageSrc" alt="" />
                     </div>
                   </a>
                 </div>
