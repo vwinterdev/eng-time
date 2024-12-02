@@ -30,27 +30,27 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
-          // const widgetEl = document.querySelector('#video-widget')
-          // widgetEl.innerHTML = `
-          //   <video id="video-widget-tag" autoplay muted loop playsinline>
+          const widgetEl = document.querySelector('#video-widget')
+          widgetEl.innerHTML = `
+            <video id="video-widget-tag" autoplay muted loop playsinline>
               
-          //     <source   src="/video.mp4" type="video/mp4">
-          //   </video>`
+              <source   src="/video.mp4" type="video/mp4">
+            </video>`
           
-          // const videoEl = document.querySelector('#video-widget-tag')
-          // const videoWidgetEl = document.querySelector('#video-widget')
+          const videoEl = document.querySelector('#video-widget-tag')
+          const videoWidgetEl = document.querySelector('#video-widget')
 
-          // videoEl.addEventListener('click', (event) => {
-          //   event.stopPropagation()
-          //   videoWidgetEl.classList.add('--open')
-          //   videoEl.muted = false;
-          // })
+          videoEl.addEventListener('click', (event) => {
+            event.stopPropagation()
+            videoWidgetEl.classList.add('--open')
+            videoEl.muted = false;
+          })
           
-          // document.addEventListener('click', (event) => {
-          //   videoWidgetEl.classList.remove('--open')
-          //   videoEl.muted = true;
-          //   videoEl.play()
-          // });
+          document.addEventListener('click', (event) => {
+            videoWidgetEl.classList.remove('--open')
+            videoEl.muted = true;
+            videoEl.play()
+          });
         }, 2000)
       });
     </script>
