@@ -48,6 +48,7 @@
           document.addEventListener('click', (event) => {
             videoWidgetEl.classList.remove('--open')
             videoEl.muted = true;
+            videoEl.play()
           });
         }, 2000)
       });
