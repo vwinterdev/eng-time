@@ -32,7 +32,7 @@
         setTimeout(() => {
           const widgetEl = document.querySelector('#video-widget')
           widgetEl.innerHTML = `
-            <video id="video-widget-tag" autoplay muted loop>
+            <video id="video-widget-tag" autoplay muted loop playsinline>
               <source   src="/video.webm" type="video/webm">
               <source   src="/video.mp4" type="video/mp4">
             </video>`
