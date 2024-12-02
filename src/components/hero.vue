@@ -37,7 +37,7 @@
             <div class="mx-auto max-w-7xl px-6 pb-32 pt-20 sm:pt-20 lg:px-8 lg:pt-10">
               <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div class="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl typing">Успех в английском начинается с English Time!</h1>
+                        <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl typing">Успех в английском начинается с English Time!</h2>
                   <p class="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">Наша школа предлагает качественное обучение английскому и французскому языкам для всех уровней подготовки – от начального до продвинутого. Мы используем современные методики преподавания, которые помогают нашим студентам быстро и эффективно освоить язык. 
                     .</p>
                   <div class="mt-10 flex items-center gap-x-6">
