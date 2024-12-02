@@ -5,7 +5,11 @@
 html {
     scroll-behavior: smooth;
 }
-
+#app{
+    overflow: hidden;
+    width: 100vw;
+    min-height: 100vh;
+}
 .video-widget{
     position: fixed;
     right: 40px;
