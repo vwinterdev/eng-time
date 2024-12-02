@@ -1,17 +1,20 @@
 <template>
+ 
   <Hero />
   <Content id="about"/>
   <Price id="price"/>
   <Promotions  id="promotions"/>
- 
+  <InfinityTable class="mb-20"/>
   <Testimonials id="reviews" />
   <Certs />
   <!-- <Team id="teachers" /> -->
+   <Map />
   <Form id="form" />
   <!-- <Footer /> -->
 </template>
 
 <script setup>
+
 import Hero from './components/hero.vue'
 import Content from './components/content.vue'
 // import Footer from './components/footer.vue'
@@ -21,5 +24,7 @@ import Testimonials from './components/testimonials.vue'
 import Price from './components/price.vue'
 import Form from './components/form.vue'
 import Certs from './components/certs.vue'
+import Map from './components/map.vue'
+import InfinityTable from './components/infinity-table.vue'
 </script>
 

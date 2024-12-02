@@ -100,7 +100,7 @@ const testimonials = [
             'https://i5.photo.2gis.com/images/profile/30258560127453511_4317_96x96.jpg',
         },
       },
-      // More testimonials...
+      
     ],
   ],
   
