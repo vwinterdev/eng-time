@@ -53,6 +53,8 @@
           videoEl.addEventListener('click', (event) => {
             event.stopPropagation();
             videoWidgetEl.classList.add('--open');
+            videoEl.currentTime = 0; // Начинаем с начала
+            videoEl.play(); // Воспроизводим видео
             videoEl.muted = false;
           });
 
