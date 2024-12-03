@@ -16,11 +16,11 @@
             <p class="mt-8">Присоединяйтесь к нам и открывайте новые горизонты с английским и французским языками!</p>
 
             <div class="mt-10 flex">
-              <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"> 🚀 Отправить заявку</a>
+              <a href="#form" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"> 🚀 Отправить заявку</a>
             </div>
           </div>
           <div>
-            <div class="hidden mx-auto max-w-7xl lg:px-8 sm:block">
+            <div class="hidden mx-auto max-w-7xl sm:block">
               <img class=" rounded-xl shadow-2xl ring-1 ring-gray-900/10" src="/logo.png" alt="" />
             </div>
           </div>

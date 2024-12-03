@@ -11,11 +11,7 @@
                     <img  :src="`/images/${i}.webp`" :alt="`Image ${i}`">
                 </div>
             </a>
-            <a :href="`/images/${i}.webp`" v-for="i of 13" :key="i + 'q'">
-                <div class="gallery-item">
-                    <img :src="`/images/${i}.webp`" :alt="`Image ${i}`">
-                </div>
-            </a>
+          
         </div>
       </div>
 </template>
