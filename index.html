@@ -30,26 +30,38 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
-          const widgetEl = document.querySelector('#video-widget')
-          widgetEl.innerHTML = `
-            <video id="video-widget-tag" autoplay muted loop playsinline>
-              <source  type="video/mp4" src="/video.mp4">
-            </video>`
-          
-          const videoEl = document.querySelector('#video-widget-tag')
-          const videoWidgetEl = document.querySelector('#video-widget')
+          const widgetEl = document.querySelector('#video-widget');
+          widgetEl.style.display = 'none'; // Скрываем блок изначально
 
-          videoEl.addEventListener('click', (event) => {
-            event.stopPropagation()
-            videoWidgetEl.classList.add('--open')
-            videoEl.muted = false;
-          })
+          widgetEl.innerHTML = `
+            <video id="video-widget-tag" muted loop playsinline>
+              <source type="video/webm" src="/video.webm">
+              <source type="video/mp4" src="/video.mp4">
+            </video>`;
           
-          document.addEventListener('click', (event) => {
-            videoWidgetEl.classList.remove('--open')
+          const videoEl = document.querySelector('#video-widget-tag');
+          const videoWidgetEl = document.querySelector('#video-widget');
+          
+          // Показ блока и начало воспроизведения после полной буферизации
+          videoEl.addEventListener('canplaythrough', () => {
+            widgetEl.style.display = 'block'; // Показываем блок
+            videoEl.play(); // Начинаем воспроизведение
+            console.log('Видео готово для воспроизведения без остановок.');
+          });
+
+          // Клик на видео
+          videoEl.addEventListener('click', (event) => {
+            event.stopPropagation();
+            videoWidgetEl.classList.add('--open');
+            videoEl.muted = false;
+          });
+
+          // Клик вне видео
+          document.addEventListener('click', () => {
+            videoWidgetEl.classList.remove('--open');
             videoEl.muted = true;
           });
-        }, 2000)
+        }, 2000);
       });
     </script>
 
