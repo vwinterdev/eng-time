@@ -1,10 +1,11 @@
 <template>
   <div class="bg-white">
 
-    <h2 class="px-6  text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-      Выберите свой курс и начните учиться уже сегодня! 📚✨
-    </h2>
+    
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+        Выберите свой курс и начните учиться уже сегодня! 📚✨
+      </h2>
       <div class="isolate">
         <div class="relative -mx-8">
           

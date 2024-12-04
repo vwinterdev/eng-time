@@ -13,7 +13,11 @@
   </ClientOnly>
    <ClientOnly>
      <Form id="form" />
-    </ClientOnly>
+  </ClientOnly>
+
+  <ClientOnly>
+    <VideoWidget />
+  </ClientOnly>
   <!-- <Footer /> -->
 </template>
 
@@ -29,5 +33,6 @@ import Form from './components/form.vue'
 import Certs from './components/certs.vue'
 import Map from './components/map.vue'
 import InfinityTable from './components/infinity-table.vue'
+import VideoWidget from './components/video.vue'
 </script>
 

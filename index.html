@@ -25,48 +25,6 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
-    <div id="video-widget" class="video-widget" draggable="true"></div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        setTimeout(() => {
-          const widgetEl = document.querySelector('#video-widget');
-          widgetEl.style.display = 'none'; // Скрываем блок изначально
-
-          widgetEl.innerHTML = `
-            <video id="video-widget-tag" muted loop playsinline>
-              <source type="video/webm" src="/video.webm">
-              <source type="video/mp4" src="/video.mp4">
-            </video>`;
-          
-          const videoEl = document.querySelector('#video-widget-tag');
-          const videoWidgetEl = document.querySelector('#video-widget');
-          
-          // Показ блока и начало воспроизведения после полной буферизации
-          videoEl.addEventListener('canplaythrough', () => {
-            widgetEl.style.display = 'block'; // Показываем блок
-            videoEl.play(); // Начинаем воспроизведение
-            console.log('Видео готово для воспроизведения без остановок.');
-          });
-
-          // Клик на видео
-          videoEl.addEventListener('click', (event) => {
-            event.stopPropagation();
-            videoWidgetEl.classList.add('--open');
-            videoEl.currentTime = 0; // Начинаем с начала
-            videoEl.play(); // Воспроизводим видео
-            videoEl.muted = false;
-          });
-
-          // Клик вне видео
-          document.addEventListener('click', () => {
-            videoWidgetEl.classList.remove('--open');
-            videoEl.muted = true;
-          });
-        }, 2000);
-      });
-    </script>
-
-
+    
   </body>
 </html>
