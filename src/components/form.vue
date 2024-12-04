@@ -105,4 +105,11 @@
   
   <script setup>
   import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/vue/24/outline'
+  import { onMounted } from 'vue'
+
+onMounted(() => {
+
+console.log('RREEEEEEE')
+
+})
   </script>

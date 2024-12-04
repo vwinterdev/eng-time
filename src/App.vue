@@ -9,12 +9,13 @@
   <Certs />
   <!-- <Team id="teachers" /> -->
    <Map />
-  <Form id="form" />
+   <ClientOnly>
+     <Form id="form-section" />
+    </ClientOnly>
   <!-- <Footer /> -->
 </template>
 
-<script setup>
-
+<script setup> 
 import Hero from './components/hero.vue'
 import Content from './components/content.vue'
 // import Footer from './components/footer.vue'
