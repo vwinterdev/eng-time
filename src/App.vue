@@ -2,7 +2,7 @@
  
   <Hero />
   <Content id="about"/>
-  <Price id="price"/>
+  <Price class="mt-20" id="price"/>
   <Promotions  id="promotions"/>
   <InfinityTable class="mb-20"/>
   <Testimonials  id="reviews" />
