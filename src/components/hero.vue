@@ -34,10 +34,10 @@
           <div class=" mx-auto max-w-7xl px-6 pb-32 pt-20 sm:pt-20 lg:px-8 lg:pt-10">
             <div class="sm:min-h-[500px] sm:h-screen sm:max-h-[800px] mx-auto max-w-4xl  lg:mx-0 flex lg:max-w-none lg:items-center justify-center">
               <div class="relative w-full shrink-0 max-w-3xl text-center">
-                <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-5xl typing">
+                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl typing">
                   🌟 Успех в английском начинается с English Time!
                 </h1>
-                <p class="mt-4 text-sm sm:text-lg leading-6 text-gray-600  ">
+                <p class="mt-4 text-lg sm:text-lg leading-6 text-gray-600  ">
                   Наши курсы — это ключ к вашему языковому успеху!&nbsp;🗝️ <br />
                   Наша школа предлагает <strong>качественное обучение&nbsp;🏫</strong> по английскому и французскому языкам для всех уровней подготовки — от начального 📘 до продвинутого 🚀. <br />
                   Мы используем <strong>современные методики&nbsp;📚,</strong> которые помогают нашим студентам <strong>быстро и эффективно&nbsp;🏃‍♂️</strong>  освоить язык. 

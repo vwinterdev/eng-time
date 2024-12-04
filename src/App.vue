@@ -5,7 +5,7 @@
   <Price id="price"/>
   <Promotions  id="promotions"/>
   <InfinityTable class="mb-20"/>
-  <Testimonials  v-motion-roll-visible-once-left id="reviews" />
+  <Testimonials  id="reviews" />
   <Certs  v-motion-roll-visible-once-left />
   <!-- <Team id="teachers" /> -->
   <ClientOnly>

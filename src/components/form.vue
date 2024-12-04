@@ -115,7 +115,8 @@ const send = async (event) => {
     });
     const encodedText = encodeURIComponent(text);
     const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${group}&text=${encodedText}`
-    // await fetch(url)
+    await fetch(url)
+    
     isSending.value = true
     console.log("is OK")
 
