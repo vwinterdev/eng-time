@@ -5,12 +5,14 @@
   <Price id="price"/>
   <Promotions  id="promotions"/>
   <InfinityTable class="mb-20"/>
-  <Testimonials id="reviews" />
-  <Certs />
+  <Testimonials  v-motion-roll-visible-once-left id="reviews" />
+  <Certs  v-motion-roll-visible-once-left />
   <!-- <Team id="teachers" /> -->
-   <Map />
+  <ClientOnly>
+    <Map />
+  </ClientOnly>
    <ClientOnly>
-     <Form id="form-section" />
+     <Form id="form" />
     </ClientOnly>
   <!-- <Footer /> -->
 </template>
