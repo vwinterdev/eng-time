@@ -12,7 +12,7 @@
     <Map />
   </ClientOnly>
    <ClientOnly>
-     <Form id="form" />
+     <Form  />
   </ClientOnly>
 
   <ClientOnly>
