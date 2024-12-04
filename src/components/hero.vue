@@ -31,10 +31,10 @@
 
 
 
-          <div class=" mx-auto max-w-7xl px-6 pb-32 pt-20 sm:pt-20 lg:px-8 lg:pt-10">
+          <div class=" mx-auto max-w-7xl px-4 pb-10 pt-20 sm:pt-20 lg:px-8 lg:pt-10">
             <div class="sm:min-h-[500px] sm:h-screen sm:max-h-[800px] mx-auto max-w-4xl  lg:mx-0 flex lg:max-w-none lg:items-center justify-center">
               <div class="relative w-full shrink-0 max-w-3xl text-center">
-                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl typing">
+                <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl typing">
                   🌟 Успех в английском начинается с English Time!
                 </h1>
                 <p class="mt-4 text-lg sm:text-lg leading-6 text-gray-600  ">
