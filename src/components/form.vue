@@ -1,17 +1,3 @@
-<!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 <template>
     <div class="relative isolate bg-gray-900 pb-32">
       <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
@@ -33,26 +19,26 @@
                 <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-br from-[#80caff] to-[#4f46e5] opacity-20" style="clip-path: polygon(74.1% 56.1%, 100% 38.6%, 97.5% 73.3%, 85.5% 100%, 80.7% 98.2%, 72.5% 67.7%, 60.2% 37.8%, 52.4% 32.2%, 47.5% 41.9%, 45.2% 65.8%, 27.5% 23.5%, 0.1% 35.4%, 17.9% 0.1%, 27.6% 23.5%, 76.1% 2.6%, 74.1% 56.1%)" />
               </div>
             </div>
-            <h2 class="text-3xl font-bold tracking-tight text-white">Get in touch</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-300">Proin volutpat consequat porttitor cras nullam gravida at. Orci molestie a eu arcu. Sed ut tincidunt integer elementum id sem. Arcu sed malesuada et magna.</p>
+            <h2 class="text-3xl font-bold tracking-tight text-white">Наши контакты</h2>
+            <!-- <p class="mt-6 text-lg leading-8 text-gray-300">Proin volutpat consequat porttitor cras nullam gravida at. Orci molestie a eu arcu. Sed ut tincidunt integer elementum id sem. Arcu sed malesuada et magna.</p> -->
             <dl class="mt-10 space-y-4 text-base leading-7 text-gray-300">
-              <div class="flex gap-x-4">
+              <!-- <div class="flex gap-x-4">
                 <dt class="flex-none">
                   <span class="sr-only">Address</span>
                   <BuildingOffice2Icon class="h-7 w-6 text-gray-400" aria-hidden="true" />
                 </dt>
                 <dd>545 Mavis Island<br />Chicago, IL 99191</dd>
-              </div>
+              </div> -->
               <div class="flex gap-x-4">
                 <dt class="flex-none">
-                  <span class="sr-only">Telephone</span>
+                  <span class="sr-only">Номер телефона</span>
                   <PhoneIcon class="h-7 w-6 text-gray-400" aria-hidden="true" />
                 </dt>
                 <dd><a class="hover:text-white" href="tel:+1 (555) 234-5678">+1 (555) 234-5678</a></dd>
               </div>
               <div class="flex gap-x-4">
                 <dt class="flex-none">
-                  <span class="sr-only">Email</span>
+                  <span class="sr-only">Почта</span>
                   <EnvelopeIcon class="h-7 w-6 text-gray-400" aria-hidden="true" />
                 </dt>
                 <dd><a class="hover:text-white" href="mailto:hello@example.com">hello@example.com</a></dd>
@@ -60,7 +46,7 @@
             </dl>
           </div>
         </div>
-        <form :onSubmit="send" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48" >
+        <form v-if="!isSending" :onSubmit="send" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48" >
           <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             
@@ -83,11 +69,15 @@
                 </div>
               </div>
             </div>
-            <div class="mt-8 flex justify-end">
+            <div class="mt-8 flex justify-start">
               <button type="submit" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Отправить</button>
             </div>
           </div>
         </form>
+        <div v-else class="text-center py-20 px-6 sm:px-12">
+          <h2 class="text-3xl font-bold text-white">Спасибо за вашу заявку!</h2>
+          <p class="mt-4 text-lg text-gray-300">Мы получили вашу заявку и скоро с вами свяжемся.</p>
+        </div>
       </div>
     </div>
   </template>
@@ -109,6 +99,7 @@ const send = async (event) => {
   const form = event.target;
   const formData = new FormData(form);
   try {
+    isSending.value = true
     let text = ''
     formData.forEach((value, name) => {
       text += `${name}: ${value} \n`
@@ -117,7 +108,6 @@ const send = async (event) => {
     const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${group}&text=${encodedText}`
     await fetch(url)
     
-    isSending.value = true
     console.log("is OK")
 
   } catch (error) {
