@@ -60,7 +60,7 @@
             </dl>
           </div>
         </div>
-        <form onsubmit="send(event)" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48" >
+        <form :onSubmit="send" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48" >
           <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
@@ -105,11 +105,34 @@
   
   <script setup>
   import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/vue/24/outline'
-  import { onMounted } from 'vue'
+  import { onMounted, ref } from 'vue'
+  const token = '7795904473:AAG3IsvW5wJ9hXVxGpVSdWgV-BfV7dh4NeE'
+  const group = '-4719473311'
 
-onMounted(() => {
+  const isSending = ref(false)
 
-console.log('RREEEEEEE')
+      
+      
+const send = async (event) => {
 
-})
+  event.stopPropagation()
+  event.preventDefault();
+  const form = event.target;
+  const formData = new FormData(form);
+  try {
+    let text = ''
+    formData.forEach((value, name) => {
+      text += `${name}: ${value} \n`
+    });
+    const encodedText = encodeURIComponent(text);
+    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${group}&text=${encodedText}`
+    await fetch(url)
+    isSending.value = true
+    console.log("is OK")
+
+  } catch (error) {
+    isSending.value = false
+  }
+}
+  
   </script>
