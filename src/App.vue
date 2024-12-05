@@ -1,5 +1,4 @@
 <template>
-  <SchemaOrg />
   <Hero />
   <Content id="about"/>
   <Price class="mt-20" id="price"/>
@@ -34,6 +33,5 @@ import Certs from './components/certs.vue'
 import Map from './components/map.vue'
 import InfinityTable from './components/infinity-table.vue'
 import VideoWidget from './components/video.vue'
-import SchemaOrg from './components/schema-org.vue'
 </script>
 
