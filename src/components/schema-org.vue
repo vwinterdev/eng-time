@@ -1,4 +1,6 @@
-
+<template>
+  <div />
+</template>
 
 <script setup>
 import { useHead } from 'unhead'
@@ -28,8 +30,9 @@ useHead({
       },
       "openingHours": "Mo-Fr 10:00-20:00, Sa-Su 11:00-16:00",
       "sameAs": [
-        "https://www.facebook.com/example",
-        "https://www.instagram.com/example"
+        "https://vk.com/club218856600",
+        "https://2gis.ru/krasnoyarsk/geo/70000001080067503",
+        "https://t.me/englisssimo"
       ],
       "offers": {
         "@type": "Offer",
