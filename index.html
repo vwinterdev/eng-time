@@ -28,9 +28,9 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "EducationalOrganization",
+        "@type": "EducationalOccupationalCredential",
         "name": "Школа английского языка в Красноярске – English time",
-        "description": "аша школа предлагает качественное обучение английскому и французскому языкам для всех уровней подготовки – от начального до продвинутого. Мы используем современные методики преподавания, которые помогают нашим студентам быстро и эффективно освоить язык. Мы предлагаем курсы английского и французского языков для детей и взрослых в Красноярске. Индивидуальный подход, опытные преподаватели, удобное расписание.",
+        "description": "Наша школа предлагает качественное обучение английскому и французскому языкам для всех уровней подготовки – от начального до продвинутого.",
         "url": "https://english-time24.ru",
         "address": {
           "@type": "PostalAddress",
@@ -42,24 +42,49 @@
         },
         "telephone": "+7-391-123-45-67",
         "email": "info@example.com",
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 55.992676,
-          "longitude": 92.9100228
-        },
         "openingHours": "Mo-Fr 10:00-20:00, Sa-Su 11:00-16:00",
         "sameAs": [
           "https://vk.com/club218856600",
           "https://2gis.ru/krasnoyarsk/geo/70000001080067503",
           "https://t.me/englisssimo"
-        ]
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "itemListElement": [
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Английский язык для начинающих",
+            "description": "Интенсивный курс для тех, кто только начинает изучать английский язык.",
+            "price": "9900.00",
+            "priceCurrency": "RUB",
+            "availability": "http://schema.org/InStock",
+            "url": "https://english-time24.ru/#price",
+            "eligibleRegion": {
+              "@type": "Place",
+              "name": "Красноярск"
+            },
+            "provider": {
+              "@type": "EducationalOrganization",
+              "name": "Школа английского языка в Красноярске – English time"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Французский язык для начинающих",
+            "description": "Базовый курс французского языка для начинающих.",
+            "price": "9900.00",
+            "priceCurrency": "RUB",
+            "availability": "http://schema.org/InStock",
+            "url": "https://english-time24.ru/#price",
+            "eligibleRegion": {
+              "@type": "Place",
+              "name": "Красноярск"
+            },
+            "provider": {
+              "@type": "EducationalOrganization",
+              "name": "Школа английского языка в Красноярске – English time"
+            }
+          }
+        ],
+        "hasCourse": [
           {
             "@type": "Course",
             "name": "Английский язык для начинающих",
@@ -81,24 +106,5 @@
         ]
       }
       </script>
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "name": "Курс английского языка для начинающих",
-          "description": "Базовый курс английского языка для начинающих. Длительность: 3 месяца.",
-          "provider": {
-            "@type": "EducationalOrganization",
-            "name": "Школа английского языка в Красноярске – English time"
-          },
-          "offers": {
-            "@type": "Offer",
-            "price": "9900.00",
-            "priceCurrency": "RUB",
-            "availability": "http://schema.org/InStock",
-            "url": "https://english-time24.ru/#price"
-          }
-        }
-        </script>
   </body>
 </html>
