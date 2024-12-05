@@ -1,12 +1,12 @@
 <template>
- 
+  <SchemaOrg />
   <Hero />
   <Content id="about"/>
   <Price class="mt-20" id="price"/>
   <Promotions  id="promotions"/>
   <InfinityTable class="mb-20"/>
   <Testimonials  id="reviews" />
-  <Certs  v-motion-roll-visible-once-left />
+  <Certs  id="certs" />
   <!-- <Team id="teachers" /> -->
   <ClientOnly>
     <Map />
@@ -34,5 +34,6 @@ import Certs from './components/certs.vue'
 import Map from './components/map.vue'
 import InfinityTable from './components/infinity-table.vue'
 import VideoWidget from './components/video.vue'
+import SchemaOrg from './components/schema-org.vue'
 </script>
 

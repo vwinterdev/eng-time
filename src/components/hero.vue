@@ -46,7 +46,7 @@
                   <Button v-motion-fade href="#form">
                     🚀 Отправить заявку
                   </Button>
-                  <Button v-motion-fade href="tel:+79999999999">
+                  <Button v-motion-fade href="tel:+79333280497">
                     📱 Позвонить
                   </Button>
                 </div>
@@ -99,8 +99,8 @@ import Button from '../ui/button.vue'
 const navigation = [
   { name: 'О нас', href: '#about' },
   { name: 'Цены', href: '#price' },
-  { name: 'Вопросы', href: '#faq' },
-  { name: 'Преподаватели', href: '#teachers' },
+  { name: 'Акции', href: '#promotions' },
+  { name: 'Сертификаты', href: '#certs' },
   { name: 'Отзывы', href: '#reviews' },
 ]
 

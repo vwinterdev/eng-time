@@ -21,7 +21,7 @@
           </div>
           <div>
             <div class="hidden mx-auto max-w-7xl sm:block">
-              <img class=" rounded-xl shadow-2xl ring-1 ring-gray-900/10" src="/logo.png" alt="" />
+              <img  src="/logo.png" alt="" />
             </div>
           </div>
         </div>

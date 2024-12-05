@@ -34,14 +34,14 @@
                   <span class="sr-only">Номер телефона</span>
                   <PhoneIcon class="h-7 w-6 text-gray-400" aria-hidden="true" />
                 </dt>
-                <dd><a class="hover:text-white" href="tel:+1 (555) 234-5678">+1 (555) 234-5678</a></dd>
+                <dd><a class="hover:text-white" href="tel:+79333280497">+7&nbsp;(933)&nbsp;328-04-97&nbsp;</a></dd>
               </div>
               <div class="flex gap-x-4">
                 <dt class="flex-none">
                   <span class="sr-only">Почта</span>
                   <EnvelopeIcon class="h-7 w-6 text-gray-400" aria-hidden="true" />
                 </dt>
-                <dd><a class="hover:text-white" href="mailto:hello@example.com">hello@example.com</a></dd>
+                <dd><a class="hover:text-white" href="mailto:iramalkova1@gmail.com">iramalkova1@gmail.com</a></dd>
               </div>
             </dl>
           </div>
