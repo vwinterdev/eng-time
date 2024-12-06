@@ -49,6 +49,9 @@
                   <Button v-motion-fade href="tel:+79333280497">
                     📱 Позвонить
                   </Button>
+                  <Button v-motion-fade href="/test">
+                    📘 Пройти тестирование
+                  </Button>
                 </div>
               </div>
 
