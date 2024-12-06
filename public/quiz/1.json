@@ -1,0 +1,86 @@
+{
+    "title": "Тест на определение уровня английского языка",
+    "description": "Пройдите этот тест, чтобы узнать ваш уровень владения английским языком. Ответьте на вопросы, и мы определим, на каком уровне вы находитесь.",
+    "questions": [
+      {
+        "title": "Choose the correct translation of 'Я хочу пить'.",
+        "variants": [
+          "I want to drink.",
+          "I want drinking.",
+          "I want drink.",
+          "I drinks."
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "title": "What is the past tense of the verb 'go'?",
+        "variants": [
+          "goed",
+          "going",
+          "went",
+          "goes"
+        ],
+        "correctAnswerIndex": 2
+      },
+      {
+        "title": "Which sentence is grammatically correct?",
+        "variants": [
+          "She can sings well.",
+          "She can sing well.",
+          "She can sung well.",
+          "She can singing well."
+        ],
+        "correctAnswerIndex": 1
+      },
+      {
+        "title": "Which word means 'кот'?",
+        "variants": [
+          "cat",
+          "dog",
+          "fish",
+          "bird"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "title": "Choose the correct question form: '___ you like coffee?'",
+        "variants": [
+          "Do",
+          "Does",
+          "Is",
+          "Are"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "title": "What does 'Could you help me, please?' mean?",
+        "variants": [
+          "Можете ли вы помочь мне, пожалуйста?",
+          "Вы можете мне помочь?",
+          "Можете помочь мне, пожалуйста?",
+          "Могу я помочь вам?"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "title": "How do you say 'Я изучаю английский' in English?",
+        "variants": [
+          "I learn English.",
+          "I study English.",
+          "I am learning English.",
+          "I learning English."
+        ],
+        "correctAnswerIndex": 2
+      },
+      {
+        "title": "What is the opposite of 'hot'?",
+        "variants": [
+          "cold",
+          "warm",
+          "cool",
+          "wet"
+        ],
+        "correctAnswerIndex": 0
+      }
+    ]
+  }

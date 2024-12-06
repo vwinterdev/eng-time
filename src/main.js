@@ -1,8 +1,13 @@
-import { ViteSSG } from 'vite-ssg/single-page'
+import { ViteSSG } from 'vite-ssg'
 import './style.css'
 import App from './App.vue'
 import { MotionPlugin } from '@vueuse/motion'
-export const createApp = ViteSSG(App, ({ app }) => {
+import routes from './routes.js'
+
+export const createApp = ViteSSG(App, {
+    routes,
+  }, 
+  ({ app }) => {
     app.use(MotionPlugin)
 })
 
