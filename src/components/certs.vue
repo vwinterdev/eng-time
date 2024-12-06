@@ -27,22 +27,22 @@
   const incentives = [
     {
         name: '1',
-      imageSrc: '/cert1.jpg',
+      imageSrc: '/cert1.webp',
       
     },
     {
         name: '3',
-imageSrc: '/cert3.jpg',
+imageSrc: '/cert3.webp',
 
 },
 {
     name: '2',
-imageSrc: '/cert2.jpg',
+imageSrc: '/cert2.webp',
 
 },
 {
     name: '4',
-imageSrc: '/cert4.jpg',
+imageSrc: '/cert4.webp',
 
 },
   ]
