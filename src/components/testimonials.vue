@@ -44,7 +44,7 @@ const testimonials = [
           name: 'Василиса Грицкевич',
           handle: '',
           imageUrl:
-            'https://i2.photo.2gis.com/images/profile/30258560133227785_b443_96x96.webp',
+            'https://i2.photo.2gis.com/images/profile/30258560133227785_b443_96x96.jpg',
         },
       },
       {
@@ -53,7 +53,7 @@ const testimonials = [
           name: 'Angelina Vladimirovna',
           handle: 'leonardkrasner',
           imageUrl:
-            'https://i6.photo.2gis.com/images/profile/30258560128936864_60b2_96x96.webp',
+            'https://i6.photo.2gis.com/images/profile/30258560128936864_60b2_96x96.jpg',
         },
       },
       // More testimonials...
@@ -67,7 +67,7 @@ const testimonials = [
           name: 'Александр Ракицкий',
           handle: '',
           imageUrl:
-            'https://i3.photo.2gis.com/images/profile/30258560127508152_1459_96x96.webp',
+            'https://i3.photo.2gis.com/images/profile/30258560127508152_1459_96x96.jpg',
         },
       },
       
@@ -83,7 +83,7 @@ const testimonials = [
           name: 'Юлия Венчакова',
           handle: 'tomcook',
           imageUrl:
-            'https://i8.photo.2gis.com/images/profile/30258560127503676_5cc9_96x96.webp',
+            'https://i8.photo.2gis.com/images/profile/30258560127503676_5cc9_96x96.jpg',
         },
       },
       // More testimonials...
@@ -97,7 +97,7 @@ const testimonials = [
           name: 'Марина Неволина',
           handle: 'leonardkrasner',
           imageUrl:
-            'https://i5.photo.2gis.com/images/profile/30258560127453511_4317_96x96.webp',
+            'https://i5.photo.2gis.com/images/profile/30258560127453511_4317_96x96.jpg',
         },
       },
       
