@@ -1,6 +1,10 @@
 <template>
     <div class="mx-auto max-w-7xl lg:px-8 overflow-hidden rounded-1 lg:mb-20">
         <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-10"> Где мы находимя? </h2>
+        <p class="mt-2 text-2xl  tracking-tight mb-10 whitespace-pre-line">
+            {{`​Академика Вавилова улица, 1 ст39​2-09 офис; 2 этаж
+            Свердловский район, Красноярск`}}
+        </p>
         <div style="width: 100%">
             <iframe 
             width="100%" 
