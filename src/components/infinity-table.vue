@@ -1,25 +1,39 @@
 <template>
-    <div class="gallery-container">
-        <div class="gallery-wrapper">
-            <a :href="`/images/${i}.webp`" v-for="i of 13" :key="i + 'a'">
-                <div class="gallery-item">
-                    <img  :src="`/images/${i}.webp`" :alt="`Image ${i}`">
-                </div>
-            </a>
-            <a :href="`/images/${i}.webp`" v-for="i of 13" :key="i + 'w'">
-                <div class="gallery-item">
-                    <img  :src="`/images/${i}.webp`" :alt="`Image ${i}`">
-                </div>
-            </a>
-          
-        </div>
-      </div>
+  <div class="embla" ref="emblaRef">
+    <section class="embla__container">
+      <h2 class="visually-hidden"> Фотографии учеников школы </h2>
+      <article class="embla__slide" v-for="i of 13" :key="i">
+        <a :href="`/images/${i}.webp`" >
+            <div class="gallery-item">
+                <img  :src="`/images/${i}.webp`" :alt="`Image ${i}`">
+            </div>
+        </a>
+      </article>
+    </section>
+  </div>
 </template>
 <script setup>
+import emblaCarouselVue from 'embla-carousel-vue'
+import Autoplay from 'embla-carousel-autoplay'
+const [emblaRef, emblaApi] = emblaCarouselVue({ 
+  loop: true, 
+  dragFree: 
+  true,speed: 1,          
+  easing: 'ease-in-out'}, 
+  [Autoplay({
+  delay: 1500,
+  stopOnInteraction: false
+  })])
 
 
 </script>
 <style scoped>
+  .embla__container{
+    display: flex;
+  }
+
+
+
     .gallery-container {
       display: flex;
       overflow: hidden;

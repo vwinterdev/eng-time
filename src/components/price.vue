@@ -1,14 +1,12 @@
 <template>
-  <div class="bg-white">
-
-    
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+ 
+    <section class="mx-auto max-w-7xl px-6 lg:px-8">
       <h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
         Выберите свой курс и начните учиться уже сегодня! 📚✨
       </h2>
-      <div class="isolate">
+
         <div class="relative -mx-8">
-          
+
           <table class="w-full table-auto  border-separate border-spacing-x-8 text-left sm:table-fixed">
          
             <tbody>     
@@ -26,25 +24,19 @@
                   </th>
                   <td v-for="tier in tiers" :key="tier.id" class="px-2 py-4 xl:px-8">
                     <div v-if="typeof feature.tiers[tier.name] === 'string'" class="text-center text-sm leading-6 text-gray-500 whitespace-nowrap">{{ feature.tiers[tier.name] }}</div>
-                    <template v-else>
-                      <CheckIcon v-if="feature.tiers[tier.name] === true" class="mx-auto h-5 w-5 text-indigo-600" aria-hidden="true" />
-                      <MinusIcon v-else class="mx-auto h-5 w-5 text-gray-400" aria-hidden="true" />
-                      <span class="sr-only">{{ feature.tiers[tier.name] === true ? 'Included' : 'Not included' }} in {{ tier.name }}</span>
-                    </template>
+                   
                   </td>
                 </tr>
               </template>
             </tbody>
           </table>
         </div>
-      </div>
-    </div>
-  </div>
+      
+    </section>
+
 </template>
 
 <script setup>
-import { CheckIcon, MinusIcon } from '@heroicons/vue/20/solid'
-
 const tiers = [
   {
     name: 'time',
