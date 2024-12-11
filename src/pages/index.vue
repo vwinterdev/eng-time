@@ -1,7 +1,7 @@
 <template>
-    <h2 class="visually-hidden">
+    <h1 class="visually-hidden">
         Английский в Красноярске
-    </h2>
+    </h1>
     <Hero />
     <Content id="about"/>
     <Price class="mt-20" id="price"/>

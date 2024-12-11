@@ -7,9 +7,8 @@
 
         <div class="relative -mx-8">
 
-          <table class="w-full table-auto  border-separate border-spacing-x-8 text-left sm:table-fixed">
-         
-            <tbody>     
+          <table class="w-full table-auto border-separate border-spacing-x-8 text-left sm:table-fixed">
+            <tbody>
               <template v-for="section in sections" :key="section.name">
                 <tr class="mt-10">
                   <th scope="colgroup" colspan="4" :class="'pb-4 pt-10 text-sm font-semibold leading-6 text-gray-900'">
@@ -23,8 +22,9 @@
                     <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
                   </th>
                   <td v-for="tier in tiers" :key="tier.id" class="px-2 py-4 xl:px-8">
-                    <div v-if="typeof feature.tiers[tier.name] === 'string'" class="text-center text-sm leading-6 text-gray-500 whitespace-nowrap">{{ feature.tiers[tier.name] }}</div>
-                   
+                    <div v-if="typeof feature.tiers[tier.name] === 'string'" class="text-center text-sm leading-6 text-gray-500 whitespace-nowrap">
+                      {{ feature.tiers[tier.name] }}
+                    </div>
                   </td>
                 </tr>
               </template>

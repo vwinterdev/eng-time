@@ -1,5 +1,8 @@
 <template>
     <section class="mx-auto max-w-7xl px-6 lg:px-8">
+      <h2 class="visually-hidden">
+          Предложения клиентам
+      </h2>
       <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none mt-10 grid  grid-cols-1 gap-8 text-base leading-7 text-gray-700 lg:grid-cols-2">
           <div>
             <h2 class="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">📚Мы предлагаем широкий выбор программ <strong>обучения в Красноярскe:</strong></h2>
