@@ -11,8 +11,8 @@ services:
       - "traefik.http.routers.english-time.entrypoints=websecure"
       - "traefik.http.routers.english-time.tls.certResolver=letsencrypt"
       - "traefik.http.services.english-time.loadbalancer.server.port=8080"
-    networks:
-      - "english_time_network"
+     networks:
+      - english_time_network
 networks:
   english_time_network:
     external: true
